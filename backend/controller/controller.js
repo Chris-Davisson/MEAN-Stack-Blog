@@ -14,6 +14,7 @@ getPosts = (req, res) => {
         if( err ) {
             res.status(500).send(genericERR);
         }else if(data.length != 0){
+            console.log(data);
             res.status(200).send(data);
         }else{
             res.status(404).send(notFoundERR);
