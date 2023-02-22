@@ -1,10 +1,13 @@
 const postModel = require('../model/postModel');
 const messageModel = require('../model/messageModel');
 const userModel = require('../model/userModel');
-
+const cors = require('cors');
 genericERR = 'There was an issue processing your request.'
 notFoundERR = "No post exist in the collection."
-
+let corsOptions = {
+    origin: 'http://localhost:4200',
+    optionsSuccessStatus: 200
+}
 //Path '/posts'
 //GET
 //Returns all posts in the collection
