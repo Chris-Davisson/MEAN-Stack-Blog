@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { ResumeComponent } from './pages/resume/resume.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { BlogComponent } from './pages/blog/blog.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbModule,
 
   ],
   providers: [],
